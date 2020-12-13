@@ -15,7 +15,7 @@ body {
 
 :root {
     --main-color: #291a1a;
-    --nav-color: #5d2a30e5;
+    --nav-color: #5d2a3054;
     --lista-color: #130d0da1;
 }
 
@@ -75,9 +75,9 @@ h1 {
 #name{
     display: absolute;
     font-family: 'Nunito', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
-    margin-top: 0.7em;
+    margin-top: 1em;
     margin-right: 5em;
 }
 
@@ -91,8 +91,8 @@ h1 {
     grid-row-start: 1;
     grid-row-end: 4;
     width: 12em;
-    height: 40.8em;
-    margin-top: 5.7em;
+    height: 100%;
+    margin-top: 0em;
     background-color: var(--lista-color);
 }
 
