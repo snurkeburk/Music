@@ -30,4 +30,17 @@ function toggleDivDisplayTwo() {
  }
 
 
- 
+ //------- GÖM LOGIN KNAPPEN IFALL MAN ÄR INLOGGAD ----//
+function test(){
+    var t = document.getElementById("accessAccount");
+    if (!document.referrer) {
+        k= false;
+    } else {
+        var referer = document.referrer;
+        k = true;
+    }
+        if (k == true){
+            t.style.display = "none";
+        }
+    console.log("ayey");
+        }

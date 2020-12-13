@@ -1,11 +1,15 @@
 var input_fields = document.querySelectorAll(".username");
 var login_btn = document.getElementById("btn");
 var i;
+var k;
+
+function check(){
 input_fields.forEach(function(input_item){
     input_item.addEventListener("input",function(){
         if(input_item.value == "dev"){
             console.log(input_item.value);
-            var k = true;            
+            k = true;     
+            localStorage.setItem("trueORFalse ", k);         
         } else {
             k = false;
         }
@@ -15,18 +19,21 @@ input_fields.forEach(function(input_item){
             if(input_item_password.value == "123"){
                 console.log(input_item_password.value);
                 var j = true;
-                i = i+1;
             } else {
                 j = false;
             }
     
             if (j==true && k == true){
                 var loggedIn = true;
+                
+                console.log(k)
                 document.getElementById("btn").onclick = function () {
-                    location.href = "index.html";
-                    }
-            }
-
+                location.href = "index.html";
+                test();
+                
+                }
+                    
+                }
 
             
         })
@@ -37,6 +44,6 @@ input_fields.forEach(function(input_item){
 
     
 
-    
+}   
 
    

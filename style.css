@@ -44,7 +44,7 @@ h1 {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 40px;
-    margin-top: 0.3em;
+    margin-top: 0.5em;
     margin-left: -2em;
     z-index: 200;
     
@@ -52,10 +52,13 @@ h1 {
 
 
 
-.accessAccount {
+#accessAccount {
     margin: auto;
-    margin-top: 0.2em;
+    margin-top: 0.5em;
     margin-right: 5em;
+    display: block;
+    display: flex;
+
 }
 
 #login, #signup{
@@ -65,7 +68,9 @@ h1 {
     font-size: 15px;
     border-style: solid;
     border-radius: 30px;
-    padding: 0.3em;
+    padding: 0.5em;
+    margin-left: 2em;
+    display: block;
 }
 
 
