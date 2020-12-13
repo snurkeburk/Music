@@ -1,0 +1,168 @@
+* {
+    padding: 0em;
+    margin: 0em;
+}
+
+body {
+    /*background-color: var(--main-color);*/
+    background: url("https://images.wallpapersden.com/image/download/artistic-gradient-blur_63604_1920x1080.jpg") no-repeat;
+    display: grid;
+    grid-template-rows: auto 1fr 0.4fr auto;
+    grid-template-columns: 1fr auto;
+    height: 100vh;
+
+}
+
+:root {
+    --main-color: #291a1a;
+    --nav-color: #5d2a30e5;
+    --lista-color: #130d0da1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    z-index: 2;
+    background: var(--nav-color);
+    padding: 0.5rem;
+    color: #fff;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 1.6em;
+    height: 3em;
+    user-select: none;
+}
+
+h1 {
+    margin: auto;
+    width: 50%;
+}
+
+#account {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-top: 0.3em;
+    margin-left: -2em;
+    z-index: 200;
+    
+}
+
+
+
+.accessAccount {
+    margin: auto;
+    margin-top: 0.2em;
+    margin-right: 5em;
+}
+
+#login, #signup{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 0.3em;
+}
+
+
+
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 12em;
+    height: 40.8em;
+    margin-top: 5.7em;
+    background-color: var(--lista-color);
+}
+
+.ul1 {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 100%;
+}
+
+ul li {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    list-style: none;
+    float: left;
+    padding: 0.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+ul li:hover a {
+    color: #fff;
+}
+
+.lista {
+    margin-bottom: 0em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.705);
+}
+
+
+
+#player {
+    display: flex;
+    justify-content: space-between;
+    grid-row: 4;
+    grid-column-end: 2;
+    grid-column-start: 1;
+    background-color: #5d2a30c9;
+    padding-top: 1em;
+}
+.wave {
+    margin-bottom: 0em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.705);
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.låt2 {
+    margin-bottom: 0em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.705);
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.songPic {
+    width: 10em;
+    height: 10em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+
+.ljud1 {
+    width: 70vw;
+    margin-bottom: 1em;
+    display: none;
+    margin: auto;
+    
+}
+
+.ljud2 {
+    width: 70vw;
+    margin-bottom: 1em;
+    display: none;
+    margin: auto;
+}
+
+
+

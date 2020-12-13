@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("https://wallpaperaccess.com/full/1981446.jpg") no-repeat;
+}
+
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.login-box h1 {
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid rgba(248, 248, 248, 0.877);
+    padding: 13px;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden; 
+    font-size: 20px;
+    padding: 8px 0px;
+    margin: 8px 0px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.textbox i {
+    width: 26px;
+    float: left;
+    text-align: center;
+    
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    float: left;
+    margin: 10px;
+}
+
+#btn {
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.322);
+    border: 2px solid #fff;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+}
+
+h2,p,a{
+    color: white;
+    position: absolute;
+}
+
+h2 {
+    top: 66%;
+    left: 38vw;
+    font-size: 18px;
+}
+
+p {
+    top: 70%;
+    left: 45%;
+    font-weight: 500;
+}
+
+a{
+    font-weight: 900;
+    border-style: solid;
+    border-radius: 1em;
+    text-decoration: none;
+    left: 120%;
+    top: -50%;
+    padding: 0.2em;
+}
