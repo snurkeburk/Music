@@ -33,6 +33,8 @@ function toggleDivDisplayTwo() {
  //------- GÖM LOGIN KNAPPEN IFALL MAN ÄR INLOGGAD ----//
 function test(){
     var t = document.getElementById("accessAccount");
+    var n = document.getElementById("name");
+
     if (!document.referrer) {
         k= false;
     } else {
@@ -41,6 +43,9 @@ function test(){
     }
         if (k == true){
             t.style.display = "none";
+            n.style.display = "block";
+        } else {
+            n.style.display = "none";
         }
     console.log("ayey");
         }

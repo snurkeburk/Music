@@ -47,7 +47,6 @@ h1 {
     margin-top: 0.5em;
     margin-left: -2em;
     z-index: 200;
-    
 }
 
 
@@ -73,6 +72,14 @@ h1 {
     display: block;
 }
 
+#name{
+    display: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 0.7em;
+    margin-right: 5em;
+}
 
 
 
