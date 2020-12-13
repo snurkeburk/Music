@@ -28,9 +28,7 @@ input_fields.forEach(function(input_item){
             }
 
 
-            if (loggedIn == true){
-                
-            }
+            
         })
     })
   })
