@@ -18,32 +18,50 @@
 <body onload="test()" >
     <nav>
         <i class="fas fa-exclamation-circle"></i>
-        <h1>FAT COCK AND BALLS</h1>    
+        <h1>Music</h1>    
         <div id="accessAccount">
             <a id="login" href="login.html">Login</a>
             <a id="signup" href="signup.html">Sign up</a>   
         </div>
-            <h4 id="name">Isak Anderson</h4>
+            <h4 id="name">Dev #420</h4>
     </nav> 
     <a href="#" id ="account"><i class="fas fa-user-circle"></i></a>
         
     <section id = "sidebar">
         <ul class="ul1">
-        <li><a href="artistOne.html" class ="lista">Theo Lindblad</a></li>
-        <li><a href="#" class ="lista">Artist</a></li>
-        <li><a href="#" class ="lista">Artist</a></li>
-        <li><a href="#" class ="lista">Artist</a></li>
-        <li><button onclick="toggleDivDisplay()" class ="wave" href = "#">MicroWAVE</button></li>
-        <li><button onclick="toggleDivDisplayTwo()" class ="låt2" href = "#" >låt2Test</button></li>
-        <li><a href = "#" class ="lista">Spellista</a></li>
-        <li><a href = "#" class ="lista">Spellista</a></li> 
+        <li><button onclick="showArtistInfo()" class = "btn" href="#" >Theo Lindblad</button></li>
+        <li><a href="#" class ="lista">Silver Tea</a></li>
+        <li><a href="#" class ="lista">Mode$st</a></li>
+
+        <li><a id ="featured">Featured songs: </a></li>
+        
+        <li><button onclick="toggleDivDisplay();toggleDivDisplayTwo()" class ="wave" href = "#">MicroWAVE</button></li>
+        <li><button onclick="toggleDivDisplayTwo();toggleDivDisplay()" class ="låt2" href = "#" >Tramadolium</button></li>
+        <li><a href="#" class = "lista">[featured låt]</a></li>
+        <li><a href = "#" class ="lista">[featured låt]</a></li> 
     </ul>
     </section>
 
+    <article class="info">
+        <div class="box"></div>
+        <h2 id ="infoSongName"></h2>
+        <h3 id="infoArtistName"></h3>
+        <h4 id="infoSongLength"></h4>
+        <img src="Wave.jpg" class="aboutPicWave" alt="pic">
+        <img src="Trama.jpg" class="aboutPicTrama" alt="pic">
+    </article>
 
+    <div class = "artistContainer">
+        <h1 id="artistName">Theo Lindblad</h1>
+        <button class="hide" onclick="hideArtistInfo()" href="#">HIDE</button>
+        <li><button onclick="toggleDivDisplay()" class ="songArtistWave" href = "#">MicroWAVE</button></li>
+        <li><button onclick="toggleDivDisplayTwo()" class ="songArtistLåt2" href = "#" >låt2Test</button></li>
+    </div>
 
     <div id = "player"> 
-        <img src="bild.jpg" class="songPic" alt="songpic">
+        <img src="Wave.jpg" class="songPicWave" alt="songpicWave">
+        <img src="Trama.jpg" class="songPicTrama" alt="songpicTrama">
+
         <audio src ="theo.mp3" controls class ="ljud1"></audio>
         <audio src ="theoTvå.mp3" controls class ="ljud2">
         </audio>

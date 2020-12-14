@@ -135,29 +135,51 @@ ul li:hover a {
     background-color: #5d2a30c9;
     padding-top: 1em;
 }
-.wave {
+.wave, .låt2{
     margin-bottom: 0em;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.705);
     padding: 0;
     border: none;
     background: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+
 }
 
-.låt2 {
+.wave:hover, .btn:hover, .låt2:hover{
+    cursor:pointer;
+    color:rgb(255, 255, 255);
+}
+
+.btn {
     margin-bottom: 0em;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.705);
     padding: 0;
     border: none;
     background: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
 }
 
-.songPic {
+
+
+
+.songPicWave {
     width: 10em;
     height: 10em;
     margin-bottom: 1em;
     margin-left: 2em;
+    display: none;
+}
+
+.songPicTrama {
+    width: 10em;
+    height: 10em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    display: none;
 }
 
 
@@ -175,6 +197,74 @@ ul li:hover a {
     display: none;
     margin: auto;
 }
+
+.info {
+    width: 60vw;
+    height: 30em;
+    background-color: none;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    margin-left:10em;
+    margin-top: 10em;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.box {
+    width: 60vw;
+    height: 40em;
+    z-index: -100;
+    margin-bottom: -30em;
+    background-color: rgba(3, 3, 3, 0.658);
+    display: none;
+}
+
+#infoSongName {
+    color:rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-size: 70px;
+    user-select: none;
+}
+#infoArtistName{
+    color:rgba(255, 255, 255, 0.9);
+    font-family: 'Nunito', sans-serif;
+    font-size: 21px;
+    font-weight: 100;   
+    user-select: none;
+
+}
+#infoSongLength {
+    color:rgb(255, 255, 255, 0.9);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    user-select: none;
+
+}
+
+.aboutPicWave { 
+    width: 18em;
+    height: 18em;
+    margin-top: 1em;
+    border-style:double;
+    border-width: 0.3em;
+    border-color:rgb(255, 255, 255, 0.2);
+    display: none;
+}
+
+.aboutPicTrama { 
+    width: 18em;
+    height: 18em;
+    margin-top: 1em;
+    border-style:double;
+    border-width: 0.3em;
+    border-color:rgb(255, 255, 255, 0.2);
+    display: none;
+}
+
+
 
 
 /* ------ artist page ---------*/
@@ -194,12 +284,16 @@ ul li:hover a {
     text-underline-offset: 0.2em;
     user-select: none;
 }
+
+
 .artistContainer {
-    display: flex;
     background-color:rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
+    grid-row: 1;
+    display: none;
 }
+
 
 .songArtistWave, .songArtistLåt2{
     font-size: 20px;
@@ -223,6 +317,27 @@ ul li:hover a {
 }
 li{
     list-style: none;
+}
+
+.hide {
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.116);
+    align-self: left;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    height: 100px;
+    border-style: outset;
+    border-radius: 1em;
+    border-color:rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.hide:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-duration: 200ms;
 }
 
 
