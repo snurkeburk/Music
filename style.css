@@ -35,6 +35,8 @@ nav {
     user-select: none;
 }
 
+
+
 h1 {
     margin: auto;
     width: 50%;
@@ -161,6 +163,9 @@ ul li:hover a {
     background: none;
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
+}
+button:focus{
+    outline: none;
 }
 
 

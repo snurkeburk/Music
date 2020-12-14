@@ -75,15 +75,17 @@ h2,p,a{
 h2 {
     font-weight: 100;
     font-size: 15px;
+    margin-left: -14em;
 }
 
 
 
 .help {
-     width: 280px;
+     width: 400px;
+     height: 1px;
     position: absolute;
     top: 50%;   
-    left: 50%;
+    left: 61%;
     padding-top: 9em;
     padding-left: -10em;
     margin-left: -4em;
@@ -97,7 +99,7 @@ a{
     border-width: 0.1em;
     padding: 0.3em;
     margin-top: 2.2em;
-    margin-left: 3em;
+    margin-left: -10.5em;
 }
 
 a:hover{
