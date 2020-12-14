@@ -47,16 +47,64 @@ h1 {
     color: rgb(255, 255, 255);
     font-size: 40px;
     margin-top: 0.5em;
-    margin-left: -2em;
+    margin-left: -2.5em;
     z-index: 200;
+    height: 60px;
+    width: 60px;
+    grid-row: 1;
 }
+
+
+
+
+.accountContainer {
+    width: 150px;
+    height: 140px;
+    background-color:rgba(22, 22, 22, 0.788);
+    grid-row: 1;
+    margin-top: 3em;
+    margin-left: -9em;
+    margin-right: 0.1em;
+    justify-self: right;
+    display: none;
+    z-index: 2000;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    line-height: 2em;
+    justify-content: center;
+}
+
+#account:hover {
+    color:rgba(255, 255, 255, 0.479);
+    transition-duration: 200ms;
+}
+.accountContainer a:hover{
+    color: rgb(255, 255, 255);
+    transition-duration: 200ms;
+}
+.accountContainer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.822);
+    font-family: 'Nunito', sans-serif;
+}
+#account:focus + .accountContainer {
+    display: flex;
+    transition-duration: 500ms;
+}
+
+.accountContainer:hover{
+    display: flex;
+}
+
+
 
 
 
 #accessAccount {
     margin: auto;
     margin-top: 0.5em;
-    margin-right: 5em;
+    margin-right: 1em;
     display: block;
     display: flex;
 
@@ -80,7 +128,7 @@ h1 {
     font-size: 20px;
     font-weight: 200;
     margin-top: 1em;
-    margin-right: 5em;
+    margin-right: 6em;
 }
 
 
@@ -147,6 +195,13 @@ ul li:hover a {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
 
+}
+
+#sidebar ul li a:focus {
+    color: rgb(253, 167, 167);
+}
+#sidebar ul li button:focus {
+    color: rgb(253, 167, 167);
 }
 
 .featured {
@@ -354,5 +409,23 @@ li{
 }
 
 
+
+/*-----------SETTINGS CSS----------------*/
+.settingsContainer{
+    width: 70vw;
+    height: 100vh;
+    background-color: rgba(53, 53, 53, 0.726);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+#settingsHeader {
+    color: #fff;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 0em;
+}
 
 

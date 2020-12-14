@@ -123,6 +123,7 @@ function hideArtistInfo(){
 function test(){
     var t = document.getElementById("accessAccount");
     var n = document.getElementById("name");
+    var j = document.getElementById("account");
 
     if (!document.referrer) {
         k= false;
@@ -135,6 +136,7 @@ function test(){
             t.style.display = "none";
             n.style.display = "block";
         } else {
+            j.style.display = "none";
             n.style.display = "none";
         }
     console.log("ayey");
