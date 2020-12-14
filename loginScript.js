@@ -31,6 +31,7 @@ input_fields.forEach(function(input_item){
                 location.href = "index.html";
                 test();
                 
+                
                 }
                     
                 }

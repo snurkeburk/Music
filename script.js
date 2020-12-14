@@ -102,6 +102,7 @@ function showArtistInfo() {
 
     console.log("h");
    }
+
 }
 
 document .querySelector(".hide") .addEventListener("click", hideArtistInfo);
@@ -116,6 +117,7 @@ function hideArtistInfo(){
 }
 
 
+
  //------- GÖM LOGIN KNAPPEN IFALL MAN ÄR INLOGGAD ----//
 function test(){
     var t = document.getElementById("accessAccount");
@@ -123,6 +125,7 @@ function test(){
 
     if (!document.referrer) {
         k= false;
+   
     } else {
         var referer = document.referrer;
         k = true;
