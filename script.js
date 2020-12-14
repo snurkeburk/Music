@@ -1,3 +1,6 @@
+
+
+
 document .querySelector(".wave") .addEventListener("click", toggleDivDisplay);
 document .querySelector(".låt2") .addEventListener("click", toggleDivDisplayTwo);
 function toggleDivDisplay() {
@@ -116,8 +119,6 @@ function hideArtistInfo(){
     }
 }
 
-
-
  //------- GÖM LOGIN KNAPPEN IFALL MAN ÄR INLOGGAD ----//
 function test(){
     var t = document.getElementById("accessAccount");
@@ -137,4 +138,6 @@ function test(){
             n.style.display = "none";
         }
     console.log("ayey");
-    }
+}
+
+    

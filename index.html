@@ -10,31 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap" rel="stylesheet">     
-    <title>Music</title>
+    <title>[B]otify</title>
     
-
 </head>
 
-
 <body onload="test()" >
+   
     <nav>
         <i class="fas fa-exclamation-circle"></i>
-        <h1>Music</h1>    
+        <h1>[B]otify</h1>    
         <div id="accessAccount">
             <a id="login" href="login.html">Login</a>
             <a id="signup" href="signup.html">Sign up</a>   
         </div>
-            <h4 id="name">Dev #420</h4>
+        <h4 id="name">Dev #420</h4>
     </nav> 
     <a href="#" id ="account"><i class="fas fa-user-circle"></i></a>
         
     <section id = "sidebar">
         <ul class="ul1">
+        <li><a class ="featured">Featured artists: </a></li>
         <li><button onclick="showArtistInfo()" class = "btn" href="#" >Theo Lindblad</button></li>
         <li><a href="#" class ="lista">Silver Tea</a></li>
         <li><a href="#" class ="lista">Mode$st</a></li>
 
-        <li><a id ="featured">Featured songs: </a></li>
+        <li><a class ="featured">Featured songs: </a></li>
         
         <li><button onclick="toggleDivDisplay();toggleDivDisplayTwo()" class ="wave" href = "#">MicroWAVE</button></li>
         <li><button onclick="toggleDivDisplayTwo();toggleDivDisplay()" class ="låt2" href = "#" >Tramadolium</button></li>
@@ -42,6 +42,9 @@
         <li><a href = "#" class ="lista">[featured låt]</a></li> 
     </ul>
     </section>
+
+
+  
 
     <article class="info">
         <div class="box"></div>
@@ -61,11 +64,13 @@
 
     <div id = "player"> 
         <img src="Wave.jpg" class="songPicWave" alt="songpicWave">
-        <img src="Trama.jpg" class="songPicTrama" alt="songpicTrama">
-
         <audio src ="theo.mp3" controls class ="ljud1"></audio>
+        <img src="Trama.jpg" class="songPicTrama" alt="songpicTrama">
+       
         <audio src ="theoTvå.mp3" controls class ="ljud2">
         </audio>
+
+
 
     </div>
     <script src="script.js"></script>

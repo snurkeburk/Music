@@ -149,6 +149,13 @@ ul li:hover a {
 
 }
 
+.featured {
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    user-select: none;
+}
+
 .wave:hover, .btn:hover, .låt2:hover{
     cursor:pointer;
     color:rgb(255, 255, 255);
