@@ -140,6 +140,6 @@ function test(){
             n.style.display = "none";
         }
     console.log("ayey");
+    
 }
 
-    
