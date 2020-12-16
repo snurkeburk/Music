@@ -123,26 +123,7 @@ function hideArtistInfo(){
 }
 
  //------- GÖM LOGIN KNAPPEN IFALL MAN ÄR INLOGGAD ----//
-function loginCheck(){
-    var t = document.getElementById("accessAccount");
-    var n = document.getElementById("name");
-    var j = document.getElementById("account");
 
-    if (!document.referrer) {
-        k= false;
-   
-    } else {
-        var referer = document.referrer;
-        k = true;
-    }
-        if (k == true){
-            t.style.display = "none";
-            n.style.display = "block";
-        } else {
-            j.style.display = "none";
-            n.style.display = "none";
-        }
-    console.log("complete");
-    
-}
+
+
 
