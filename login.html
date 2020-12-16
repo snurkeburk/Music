@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="check()">
+<body>
     <div class="login-box">
         <h1>Login</h1>
+        <form name="myForm">
         <div class="textbox">
-            <input class="username" type="text" placeholder="Username" name="" value="">
+            <input class="username" type="text" placeholder="Username" name="fname" value="">
         </div>
 
         <div class="textbox">
-            <input class="password" type="password" placeholder="Password" name="" value="">
+            <input class="password" minlength="3" type="password" placeholder="Password" name="" value="" required>
         </div>
-
-        <input id="btn" type="button"  name="" value="Sign in">
+    </form>
+        <input onclick="logIn()" id="btn" type="submit" name="" value="Sign in">
     </div>
     <div class="help">
     <h2>Don't have an account?</h2>

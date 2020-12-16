@@ -1,50 +1,62 @@
-var input_fields = document.querySelectorAll(".username");
-var login_btn = document.getElementById("btn");
-var i;
-var k;
+var today = new Date();
+  var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
 
-function check(){
-input_fields.forEach(function(input_item){
-    input_item.addEventListener("input",function(){
-        if(input_item.value == "dev"){ // här kan man ändra till en variabel istället för "dev"
-            console.log(input_item.value);
-            k = true;     
-            localStorage.setItem("trueORFalse ", k);         
-        } else {
-            k = false;
+  function setCookie(name, value)
+  {
+    document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
+  }
+function putCookie(form)
+  {
+   setCookie("userName", form[0].usrname.value);
+   setCookie("passWord", form[0].psword.value);
+
+   alert(document.cookie);
+   return true;
+}
+
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
         }
-    var input_fields_password = document.querySelectorAll(".password");
-        input_fields_password.forEach(function(input_item_password){
-        input_item_password.addEventListener("input",function(){
-            if(input_item_password.value == "123"){ // här kan man ha en PW variabel istället för "123"
-                console.log(input_item_password.value);
-                var j = true;
-            } else {
-                j = false;
-            }
-    
-            if (j==true && k == true){
-                var loggedIn = true;
-                
-                console.log(k)
-                document.getElementById("btn").onclick = function () {
-                location.href = "index.html";
-                test();
-                
-                
-                }
-                    
-                }
+        return "";
+    }
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
 
-            
-        })
-    })
-  })
-})
+//------------ Login -----------//
 
 
-    
+function logIn() {
+    var a = getCookie("userName");
+    var b = getCookie("passWord");
+    var inputVal = document.querySelector(".username").value;
+    var inputValPw= document.querySelector(".password").value;
 
-}   
+    var pw = document.querySelector("password");
+    var x = document.forms["myForm"]["fname"].value;
+    if(inputVal==a && inputValPw == b){
+    console.log("login successful");
+    } else {
+    console.log("username / password incorrect!")
+    }
 
-   
+
+}
+

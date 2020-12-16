@@ -14,7 +14,7 @@
     
 </head>
 
-<body onload="test()" >
+<body>
     <nav>
         <i class="fas fa-exclamation-circle"></i>
         <div class="container">
@@ -61,10 +61,11 @@
     </article>
 
     <div class = "artistContainer">
-        <h1 id="artistName">Theo Lindblad</h1>
         <button class="hide" onclick="hideArtistInfo()" href="#">HIDE</button>
-        <li><button onclick="toggleDivDisplay()" class ="songArtistWave" href = "#">MicroWAVE</button></li>
-        <li><button onclick="toggleDivDisplayTwo()" class ="songArtistLåt2" href = "#" >låt2Test</button></li>
+        <h1 id="artistName">Theo Lindblad</h1>
+        <h2 id="artistSongs">Available songs:</h2>
+        <p class="artistSongsCenter"><button onclick="toggleDivDisplay()" class ="songArtistWave" href = "#">MicroWAVE</button></p>
+        <p class="artistSongsCenter"><button onclick="toggleDivDisplayTwo()" class ="songArtistLåt2" href = "#" >låt2Test</button></p>
     </div>
 
     <div id = "player"> 

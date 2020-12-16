@@ -11,6 +11,7 @@ function toggleDivDisplay() {
     var aboutWaveImg = document.querySelector(".aboutPicWave");
     var aboutTramaImg = document.querySelector(".aboutPicTrama");
     var box = document.querySelector(".box");
+    var container = document.querySelector(".artistContainer");
    if(x.clicked == true){
     x.style.display = "block";
     y.style.display = "none"  
@@ -35,6 +36,7 @@ function toggleDivDisplay() {
       aboutTramaImg.style.display = "none";
       aboutWaveImg.style.display = "block";
       box.style.display = "block";
+      container.style.display = "none";
 
 
    }   
@@ -102,6 +104,7 @@ function showArtistInfo() {
        aboutWaveImg.style.display = "none";
        aboutTramaImg.style.display = "none"; 
        box.style.display = "none";
+       
 
     console.log("h");
    }
@@ -120,7 +123,7 @@ function hideArtistInfo(){
 }
 
  //------- GÖM LOGIN KNAPPEN IFALL MAN ÄR INLOGGAD ----//
-function test(){
+function loginCheck(){
     var t = document.getElementById("accessAccount");
     var n = document.getElementById("name");
     var j = document.getElementById("account");
@@ -139,7 +142,7 @@ function test(){
             j.style.display = "none";
             n.style.display = "none";
         }
-    console.log("ayey");
+    console.log("complete");
     
 }
 
