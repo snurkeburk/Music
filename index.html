@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/1d4db3c524.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap" rel="stylesheet">     
-    <title>[B]otify</title>
-    
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1d4db3c524.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap" rel="stylesheet">     
+        <title>[B]otify</title>
+        
+    </head>
 
 <body onload="logIn()">
     <nav>
@@ -26,13 +26,13 @@
             <a id="login" href="login.html">Login</a>
             <a id="signup" href="signup.html">Sign up</a>   
         </div>
-        <h4 id="name">dev</h4>
+        <h4 id="name"></h4>
     </nav> 
     <a href="#" id ="account"><i class="fas fa-user-circle"></i></a>
     <div href="#" class="accountContainer">
         <a href="/settings.html" class = "settings">Settings</a>
         <a href="#" class = "myAccount">My account</a>
-        <a href="/login.html" class="logout">Log out</a>
+        <button onclick="hide()" class="logout">Log out</button>
     </div>
     <section id = "sidebar">
         <ul class="ul1">
@@ -46,7 +46,7 @@
         <li><a href = "#" class = "lista">[featured låt]</a></li>
         <li><a href = "#" class ="lista">[featured låt]</a></li> 
     </ul>
-    </section>
+</section>
 
 
   
@@ -75,14 +75,13 @@
        
         <audio src ="theoTvå.mp3" controls class ="ljud2">
         </audio>
-
-
+        
 
     </div>
     <script src="loginScript.js"></script>
     <script src="script.js"></script>
 
-
+    
 
 
 </body>

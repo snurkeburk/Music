@@ -193,8 +193,11 @@ nav {
     border-radius: 30px;
     padding: 0.5em;
     margin-left: 2em;
-    display: block;
+    display: none;
 }
+
+
+
 
 #name{
     display: absolute;
