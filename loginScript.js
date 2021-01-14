@@ -29,6 +29,7 @@ function putCookie(form)
 //------------ Login -----------//
 function hide(){
     loggedIn = false;
+    
     var k = document.getElementById("login");
     var l = document.getElementById("signup");
     var icon = document.getElementById("account");
@@ -42,6 +43,7 @@ function hide(){
     console.log("loggedIn == false");
 } else if (loggenId == true){
     l.style.display = "none";
+
     k.style.display = "none";
     icon.style.display = "block";
     name.style.display = "block";
@@ -61,34 +63,24 @@ function logIn() {
     var loggedIn;
     var j = document.querySelectorAll("logout");
     var pw = document.querySelector("password");
-
+    let element = document.querySelector(".minH4tag");
+    element.innerHTML = a;
+    
     
     var inputVal = document.querySelector(".username").value;
     var inputValPw= document.querySelector(".password").value;
     var x = document.forms["myForm"]["fname"].value;
     if(inputVal==a && inputValPw == b){
-    console.log("login successful");
-    loggedIn = true;
-    name.value = document.querySelector(".username").value;
-    window.location.href = "/index.html";
+        console.log("login successful");
+        loggedIn = true;
+        element.innerHTML = a;
+        window.location.href = "/index.html";
 
    // confirm();
 } else {
     console.log("username / password incorrect!")
     loggedIn = false;
 
-}
-if(loggedIn == false){
-    l.style.display = "block";
-    k.style.display = "block";
-    icon.style.display = "none";
-    name.style.display = "none";
-    console.log("loggedIn == false");
-} else if (loggenId == true){
-    l.style.display = "none";
-    k.style.display = "none";
-    icon.style.display = "block";
-    name.style.display = "block";
 }
 
 
@@ -106,6 +98,7 @@ function notLoggedIn(){
         name.style.display = "none";
         console.log("loggedIn == false");
         window.location.href = "/index.html";
+        
     } else{
         return true;
     }
