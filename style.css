@@ -209,6 +209,7 @@ nav {
     font-family: sans-serif;
     color: rgb(255, 255, 255);
     margin: auto;
+    display: block;
 }
 
 

@@ -29,11 +29,10 @@ function putCookie(form)
 //------------ Login -----------//
 function hide(){
     loggedIn = false;
-    
+    var name = document.querySelector(".minH4tag");
     var k = document.getElementById("login");
     var l = document.getElementById("signup");
     var icon = document.getElementById("account");
-    var name = document.getElementById("name");
     console.log("hide");
     if(loggedIn == false){
     l.style.display = "block";
@@ -43,10 +42,9 @@ function hide(){
     console.log("loggedIn == false");
 } else if (loggenId == true){
     l.style.display = "none";
-
+    element.style.display = "none";
     k.style.display = "none";
     icon.style.display = "block";
-    name.style.display = "block";
 }
 
     
@@ -54,8 +52,12 @@ function hide(){
 
 
 function logIn() {   
+    let element = document.querySelector(".minH4tag");
     var a = getCookie("userName");
+    element.innerHTML = a;
+
     var b = getCookie("passWord");
+    var tempName = "temp";
     var k = document.getElementById("login");
     var l = document.getElementById("signup");
     var icon = document.getElementById("account");
@@ -63,17 +65,12 @@ function logIn() {
     var loggedIn;
     var j = document.querySelectorAll("logout");
     var pw = document.querySelector("password");
-    let element = document.querySelector(".minH4tag");
-    element.innerHTML = a;
-    
-    
     var inputVal = document.querySelector(".username").value;
     var inputValPw= document.querySelector(".password").value;
     var x = document.forms["myForm"]["fname"].value;
     if(inputVal==a && inputValPw == b){
         console.log("login successful");
         loggedIn = true;
-        element.innerHTML = a;
         window.location.href = "/index.html";
 
    // confirm();
