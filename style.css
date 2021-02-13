@@ -4,8 +4,8 @@
 }
 
 body {
-    /*background-color: var(--main-color);*/
-    background: url("https://images.wallpapersden.com/image/download/artistic-gradient-blur_63604_1920x1080.jpg") no-repeat;
+    background-image: url("background.jpg");
+    background-color:rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-rows: auto 1fr 0.4fr auto;
     grid-template-columns: 1fr auto;
